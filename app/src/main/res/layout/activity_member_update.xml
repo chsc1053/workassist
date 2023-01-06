@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberUpdateActivity">
+
+    <EditText
+        android:id="@+id/et_pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/area_pin_code"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/b_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_plumber"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/b_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="114dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pincode" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/please_update_your_details_below"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_work"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_barber"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/barber"
+        app:layout_constraintBottom_toTopOf="@+id/cb_cleaner"
+        app:layout_constraintEnd_toStartOf="@+id/cb_carpenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_work" />
+
+    <CheckBox
+        android:id="@+id/cb_carpenter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/carpenter"
+        app:layout_constraintBottom_toTopOf="@+id/cb_electrician"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb_barber"
+        app:layout_constraintTop_toBottomOf="@+id/tv_work" />
+
+    <CheckBox
+        android:id="@+id/cb_electrician"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/electrician"
+        app:layout_constraintBottom_toTopOf="@+id/cb_painter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb_cleaner"
+        app:layout_constraintTop_toBottomOf="@+id/cb_carpenter" />
+
+    <CheckBox
+        android:id="@+id/cb_cleaner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cleaner"
+        app:layout_constraintBottom_toTopOf="@+id/cb_gardener"
+        app:layout_constraintEnd_toStartOf="@+id/cb_electrician"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_barber" />
+
+    <CheckBox
+        android:id="@+id/cb_gardener"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/gardener"
+        app:layout_constraintBottom_toTopOf="@+id/cb_plumber"
+        app:layout_constraintEnd_toStartOf="@+id/cb_painter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_cleaner" />
+
+    <CheckBox
+        android:id="@+id/cb_painter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/painter"
+        app:layout_constraintBottom_toTopOf="@+id/cb_plumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb_gardener"
+        app:layout_constraintTop_toBottomOf="@+id/cb_electrician" />
+
+    <CheckBox
+        android:id="@+id/cb_plumber"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/plumber"
+        app:layout_constraintBottom_toTopOf="@+id/et_pincode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_gardener" />
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_the_professions_below"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cb_barber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerHomeActivity">
+
+
+    <TextView
+        android:id="@+id/tv_customer_home"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/please_choose_the_work_and_enter_your_area_s_pincode_to_proceed2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/rg_work"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/et_pincode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_customer_home">
+
+        <RadioButton
+            android:id="@+id/rb_barber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/barber" />
+
+        <RadioButton
+            android:id="@+id/rb_carpenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/carpenter" />
+
+        <RadioButton
+            android:id="@+id/rb_cleaner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cleaner" />
+
+        <RadioButton
+            android:id="@+id/rb_electrician"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/electrician" />
+
+        <RadioButton
+            android:id="@+id/rb_gardener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gardener" />
+
+        <RadioButton
+            android:id="@+id/rb_painter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/painter" />
+
+        <RadioButton
+            android:id="@+id/rb_plumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plumber" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/area_pin_code"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/b_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_work" />
+
+    <Button
+        android:id="@+id/b_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="243dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pincode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
